@@ -1,3 +1,5 @@
+import '../styles/components-style/form.scss';
+
 import { Link } from 'react-router-dom';
 
 function Form({ text }) {
@@ -9,15 +11,15 @@ function Form({ text }) {
         <input placeholder="Password..." />
       </div>
       <div className="buttons">
-        <button className="login">Login</button>
+        <button className="login btn">Login</button>
         <Link to="/register">
-          <button className="register">Register</button>
+          <button className="register btn">Register</button>
         </Link>
       </div>
       <div className="no-account">
         <h4>Or play with no account</h4>
         <Link to="/onboarding">
-          <button>No account</button>
+          <button className="btn">No account</button>
         </Link>
       </div>
     </section>

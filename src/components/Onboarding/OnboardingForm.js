@@ -1,3 +1,5 @@
+import '../../styles/components-style/onboarding.scss';
+
 function OnboardingForm({ update }) {
   function handleClick() {
     update();
@@ -9,7 +11,9 @@ function OnboardingForm({ update }) {
       </section>
       <section>
         <input type="text" placeholder="Username..." />
-        <button onClick={handleClick}>Submit</button>
+        <button className="btn" onClick={handleClick}>
+          Submit
+        </button>
       </section>
     </div>
   );

@@ -11,9 +11,15 @@
   width: 270px;
 }
 
-@mixin Btn {
+@mixin btn {
   background: $Btn-color;
   border: none;
   border-radius: 6px;
   padding: 0.3em 1em 0.3em 1em;
 }
+
+@mixin btn-dark {
+  background: $main-color;
+  border: 1px solid $font-color;
+  max-width: 6rem;
+} ;

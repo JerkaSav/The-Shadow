@@ -1,7 +1,6 @@
 import Header from '../components/Header';
 import OnboardingForm from '../components/Onboarding/OnboardingForm';
 import OnboardingStart from '../components/Onboarding/OnboardingStart';
-import '../styles/view-style/onboarding.scss';
 
 import { useState } from 'react';
 

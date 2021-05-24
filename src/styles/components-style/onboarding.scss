@@ -1,0 +1,24 @@
+@import '../utilities/variable';
+
+h4 {
+  margin: 4rem 0 2rem 0;
+}
+input {
+  margin-bottom: 1rem;
+}
+
+.btn-dark {
+  margin-left: 0.5rem;
+  img {
+    padding: 0.5em;
+  }
+}
+
+.text-bubble {
+  max-width: 15rem;
+  background: $main-color;
+  border-radius: 0.5rem;
+  p {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+}

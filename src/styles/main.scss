@@ -1,7 +1,7 @@
 @import './utilities/variable';
 @import './utilities/fonts';
-@import './grid/m-grid';
-@import './components-style/form.scss';
+@import './layout';
+@import './styles.scss';
 
 body {
   color: $font-color;

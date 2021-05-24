@@ -2,12 +2,13 @@ import inventory from '../../assets/inventory.svg';
 import logBook from '../../assets/logbook.svg';
 import equipment from '../../assets/equipment.svg';
 import arrow from '../../assets/arrow.svg';
+import '../../styles/components-style/onboarding.scss';
 
 import { useState } from 'react';
 
 function OnboardingStart({ update }) {
   const [imgShown, setImgShown] = useState(inventory);
-  const [textDisplayed, setTextDisplayed] = useState('The trusty backpack that every adventures needs! Click on me to review its contents');
+  let [textDisplayed, setTextDisplayed] = useState('The trusty backpack that every adventures needs! Click on me to review its contents');
 
   function ChangeImg() {
     if (imgShown !== equipment) {

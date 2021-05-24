@@ -1,4 +1,7 @@
+import '../styles/components-style/form.scss';
+
 import { Link } from 'react-router-dom';
+
 function RegisterFrom() {
   return (
     <section className="form register-form">
@@ -9,7 +12,7 @@ function RegisterFrom() {
       </div>
       <div className="buttons">
         <Link to="/register">
-          <button className="register">Register</button>
+          <button className="register btn">Register</button>
         </Link>
       </div>
     </section>

@@ -1,0 +1,10 @@
+@import './mixin/mixin.scss';
+.btn {
+  @include btn;
+}
+.btn-dark {
+  @include btn-dark;
+}
+input {
+  @include input;
+}
