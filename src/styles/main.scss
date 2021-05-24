@@ -1,0 +1,13 @@
+@import './utilities/variable';
+@import './utilities/fonts';
+@import './grid/m-grid';
+@import './components-style/form.scss';
+
+body {
+  color: $font-color;
+  background: $background-color;
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
