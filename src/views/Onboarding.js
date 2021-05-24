@@ -12,13 +12,16 @@ function Onboarding() {
     setOnboardingStarted(!onboardingStarted);
     setHeaderText('Inventory');
   }
+  function handleChangeHeader(newHeader) {
+    setHeaderText(newHeader);
+  }
 
   return (
     <article>
       <section>
         <Header text={headerText} />
       </section>
-      {onboardingStarted ? <OnboardingStart /> : <OnboardingForm update={handleClick} />}
+      {onboardingStarted ? <OnboardingStart update={handleChangeHeader} /> : <OnboardingForm update={handleClick} />}
     </article>
   );
 }
