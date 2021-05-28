@@ -16,10 +16,8 @@ function Onboarding() {
   }
 
   return (
-    <article>
-      <section>
-        <Header text={headerText} />
-      </section>
+    <article className="grid">
+      <Header text={headerText} />
       {onboardingStarted ? <OnboardingStart update={handleChangeHeader} /> : <OnboardingForm update={handleClick} />}
     </article>
   );

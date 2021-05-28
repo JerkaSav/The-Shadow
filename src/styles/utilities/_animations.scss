@@ -1,3 +1,5 @@
+@import './variable';
+
 //  Animation for typing out text
 //  animation: type 4s steps(60, end);
 //  width: 30em;
@@ -8,3 +10,34 @@
 //      width: 0;
 //    }
 //  }
+
+// body {
+//   animation: 5s changeBackgroundColor linear;
+// }
+
+// @keyframes changeBackgroundColor {
+//   from {
+//     background: white;
+//   }
+
+//   to {
+//     background: $background-color;
+//   }
+// }
+
+header.enable {
+  animation: type 2s steps(120, end);
+  width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+header.disable {
+  animation: none;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+  }
+}

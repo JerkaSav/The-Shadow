@@ -5,7 +5,7 @@ function OnboardingForm({ update }) {
     update();
   }
   return (
-    <div>
+    <div className="onboarding-start">
       <section>
         <h4>Who are we playing as today?</h4>
       </section>

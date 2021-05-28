@@ -3,7 +3,7 @@ import RegisterForm from '../components/RegisterForm';
 
 function Register() {
   return (
-    <article>
+    <article className="grid">
       <Header text="Register" />
       <RegisterForm text="" />
     </article>

@@ -1,5 +1,5 @@
 @import '../utilities/variable';
-
+@import '../mixin/mixin.scss';
 h4 {
   margin: 4rem 0 2rem 0;
 }
@@ -8,17 +8,44 @@ input {
 }
 
 .btn-dark {
-  margin-left: 0.5rem;
+  position: relative;
+  margin-top: 3rem;
+  margin-left: 1rem;
   img {
     padding: 0.5em;
   }
+
+  .text-bubble {
+    top: -5.9rem;
+    right: -16rem;
+    width: 15rem;
+    background: $main-color;
+    color: $font-color;
+    border-radius: 0.7rem;
+    position: absolute;
+    .arrow-container {
+      position: absolute;
+      bottom: -4px;
+      left: -16px;
+      transform: rotate(45deg);
+      z-index: -1;
+      .triangle {
+        @include triangle(25px, border-top, $main-color);
+      }
+    }
+    p {
+      padding: 1rem 0.5rem 1rem 1rem;
+    }
+  }
 }
 
-.text-bubble {
-  max-width: 15rem;
-  background: $main-color;
-  border-radius: 0.5rem;
-  p {
-    padding: 1rem 0.5rem 1rem 0.5rem;
-  }
+.onboarding-footer {
+  width: 90%;
+  bottom: 1rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.arrow {
+  margin-left: auto;
 }
