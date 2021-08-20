@@ -3,7 +3,7 @@ import logBook from '../../assets/logbook.svg';
 import equipment from '../../assets/equipment.svg';
 function Btn() {
   return (
-    <seciton className="btns">
+    <div className="btns">
       <button className="btn-dark">
         <img src={inventory} alt="inventory" />
       </button>
@@ -13,7 +13,7 @@ function Btn() {
       <button className="btn-dark">
         <img src={equipment} alt="equipment" />
       </button>
-    </seciton>
+    </div>
   );
 }
 

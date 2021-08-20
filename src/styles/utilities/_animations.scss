@@ -34,10 +34,19 @@ header.enable {
 header.disable {
   animation: none;
 }
+
 @keyframes type {
   from {
     width: 0;
   }
   to {
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

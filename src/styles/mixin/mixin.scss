@@ -21,7 +21,6 @@
 @mixin btn-dark {
   background: $main-color;
   border: 1px solid $font-color;
-  max-width: 6rem;
 }
 
 @mixin triangle($borderThickness, $borderSide, $color) {

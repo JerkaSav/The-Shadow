@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 function Header({ text }) {
   const location = useLocation();

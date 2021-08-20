@@ -16,7 +16,9 @@
 }
 
 p,
-button {
+button,
+label,
+.Typewriter__wrapper {
   font-size: $reg-text;
   font-family: Roboto;
 }
