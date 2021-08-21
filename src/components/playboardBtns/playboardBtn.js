@@ -6,11 +6,10 @@ function PlayboardBtn({ onOff, changeText, btn, options, response }) {
   const [outro, setOutro] = useState(false);
   function check() {
     count++;
-    if (count >= 4) {
+    if (count >= 6) {
       setIsIntro(false);
     }
 
-    console.log(outro);
     changeText(outro);
   }
   function sendResponse(player_answer) {
@@ -21,11 +20,9 @@ function PlayboardBtn({ onOff, changeText, btn, options, response }) {
   }
   useEffect(() => {
     if (!isIntro) {
-      console.log('isIntro Changed to:', isIntro);
       setOutro(true);
-      console.log('outro is:', outro);
     }
-  }, [isIntro]);
+  }, [isIntro, outro]);
 
   return (
     <div>

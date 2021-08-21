@@ -6,45 +6,58 @@ import typewriter from '../../functions/typewriter';
 import { useEffect, useRef } from 'react';
 
 function Playboard() {
-  let text = story.intro;
+  // text variable is the holder of the text rendered on the screen
+  let text;
+  // !!Might not be needed!!
   let isIntro = true;
+
+  // gets the textContainer and btn from the DOM
   const textContainer = useRef(null);
   const btn = useRef(null);
-  let count = 0;
-  function changeText(outro) {
-    if (outro) {
-      console.log('in outro');
-      text = gameLogic(story.hotel, count, 'outro');
-      if (text[1]) {
-        text.splice(0, 1);
-      } else {
-        alert('end of arrival');
+
+  // Location = where the player can go
+  let location = ['NaN', 'hotel'];
+  // What actions exist in that location
+  let action = ['intro', 'locationIntro', 'greeting', 'outro'];
+
+  function changeText() {
+    console.log('Location:', location[0], 'action:', action[0]);
+    // Checks if text variable is not empty and if its almost empty
+    if (text !== undefined && text.length === 1) {
+      // initial check to make the game move to hotel location
+      if (location[0] === 'NaN') {
+        location.splice(0, 1);
       }
-    } else {
-      console.log('out of outro');
-      if (text[1]) {
-        text.splice(0, 1);
-      } else {
-        isIntro = !isIntro;
-        count++;
-        text = gameLogic(story.hotel, count, 'greeting');
-      }
+      // Makes so the next action is loaded in
+      action.splice(0, 1);
+      console.log('spliced location and action');
     }
-    if (Array.isArray(text)) {
-      typewriter(text[0], textContainer.current, 5, btn.current);
-    } else {
-      typewriter(text, textContainer.current, 5, btn.current);
-      text = [];
+    // Get the text fom gameLogic
+    text = gameLogic(location[0], action[0]);
+    console.log(text.length, text);
+
+    if (text.length > 1) {
+      text.splice(0, 1);
     }
+    typewriter(text[0], textContainer.current, 5, btn.current);
   }
+
   function answer(response) {
-    console.log(response);
-    text = gameLogic(story.hotel, count, response);
-    typewriter(text, textContainer.current, 5, btn.current);
+    typewriter(
+      gameLogic('hotel', response),
+      textContainer.current,
+      5,
+      btn.current
+    );
   }
 
   useEffect(() => {
-    typewriter(text[0], textContainer.current, 5, btn.current);
+    typewriter(
+      gameLogic(location[0], action[0])[0],
+      textContainer.current,
+      5,
+      btn.current
+    );
   });
 
   return (
@@ -55,7 +68,7 @@ function Playboard() {
         onOff={isIntro}
         changeText={changeText}
         btn={btn}
-        options={story.hotel.hotelManager.options}
+        options={story.hotel.people.hotelManager.options}
         response={answer}
       />
     </div>
