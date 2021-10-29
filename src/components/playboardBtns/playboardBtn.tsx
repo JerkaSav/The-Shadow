@@ -18,7 +18,6 @@ export const PlayboardBtn: React.FC<Props> = ({
   const [isIntro, setIsIntro] = useState(true);
   let count = 0;
   const [outro, setOutro] = useState(false);
-  const groda = "hallo";
   function check() {
     count++;
     if (count >= 6) {
