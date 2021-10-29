@@ -1,14 +1,14 @@
 import "../../styles/components-style/playboard.scss";
 import { story } from "../../text/story.json";
 import PlayboardBtn from "../playboardBtns/playboardBtn";
-import gameLogic from "../../functions/gameLogic";
+import { gameLogic } from "../../functions/gameLogic";
 import typewriter from "../../functions/typewriter";
 import { useEffect, useRef } from "react";
 import * as React from "react";
 
 export const Playboard: React.FC = () => {
   // text variable is the holder of the text rendered on the screen
-  let text: string;
+  let text: string | string[];
   // !!Might not be needed!!
   const isIntro = true;
 

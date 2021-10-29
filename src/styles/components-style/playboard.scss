@@ -1,5 +1,5 @@
-@import '../utilities/variable';
-@import '../utilities/animations';
+@import "../utilities/variable";
+@import "../utilities/animations";
 .playboard {
   background-color: $main-color;
   border: 1px solid white;
@@ -47,7 +47,7 @@
     label {
       margin: auto auto 20px auto;
     }
-    input[type='radio'] {
+    input[type="radio"] {
       position: absolute;
       display: none;
     }

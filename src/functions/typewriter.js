@@ -2,18 +2,18 @@ const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 async function typewriter(string, element, speed, btn) {
   // Create element
-  const pElement = document.createElement('p');
+  const pElement = document.createElement("p");
 
   // Create element for blinking line
-  const span = document.createElement('span');
+  const span = document.createElement("span");
   // Adds the class .line to the span element
-  span.classList.add('line');
+  span.classList.add("line");
 
   // Adds the line that will show
-  span.innerHTML = '|';
+  span.innerHTML = "|";
 
   // reset the p elements content to nothing
-  pElement.innerHTML = '';
+  pElement.innerHTML = "";
 
   // hide button
   btn.disabled = true;
@@ -25,7 +25,7 @@ async function typewriter(string, element, speed, btn) {
     // and append the blinking line
     pElement.append(span);
     // reset the p elements parent to make sure nothing is typed twice
-    element.innerHTML = '';
+    element.innerHTML = "";
     // add the new p element with content to the parent element
     element.append(pElement);
     // make the loop slower for typewriter effect

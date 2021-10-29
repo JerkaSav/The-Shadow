@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import LandingPage from "./views/LandingPage";
 import { Register } from "./views/Register";
 import { Onboarding } from "./views/Onboarding";
-import Main from "./views/Main";
+import { Main } from "./views/Main";
 import * as React from "react";
 
 export const App: React.FC = () => (

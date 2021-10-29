@@ -10,5 +10,3 @@ export const Main: React.FC = () => (
     <Playboard />
   </div>
 );
-
-export default Main;
