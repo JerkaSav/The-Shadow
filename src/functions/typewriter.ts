@@ -1,9 +1,14 @@
-const timer = (ms) => new Promise((res) => setTimeout(res, ms));
+const timer = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
-async function typewriter(string, element, speed, btn) {
+export const typewriter = async (
+  string: string,
+  speed: number
+): Promise<void> => {
+  if (!string) return;
   // Create element
   const pElement = document.createElement("p");
-
+  const parent = document.querySelector(".text-container");
+  (parent as HTMLElement).innerHTML = "";
   // Create element for blinking line
   const span = document.createElement("span");
   // Adds the class .line to the span element
@@ -14,20 +19,14 @@ async function typewriter(string, element, speed, btn) {
 
   // reset the p elements content to nothing
   pElement.innerHTML = "";
-
-  // hide button
-  btn.disabled = true;
-
+  parent?.append(pElement);
   //loop trought every index of the string
   for (let i = 0; i < string.length; i++) {
     // add the letter to the p element
     pElement.innerHTML += string[i];
     // and append the blinking line
     pElement.append(span);
-    // reset the p elements parent to make sure nothing is typed twice
-    element.innerHTML = "";
-    // add the new p element with content to the parent element
-    element.append(pElement);
+
     // make the loop slower for typewriter effect
     await timer(speed);
     // to make sure that the blinking line is not staying in the DOM and only renders
@@ -36,8 +35,4 @@ async function typewriter(string, element, speed, btn) {
       span.remove();
     }
   }
-  // show button
-  btn.disabled = false;
-}
-
-export default typewriter;
+};

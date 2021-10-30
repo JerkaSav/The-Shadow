@@ -1,0 +1,25 @@
+{
+  "hotelIntro": [
+    "You knock on the door. It's late, you think and hope that someone is still up",
+    "after awhile a tall balded figure, he looks almost like a shadow opens the door."
+  ],
+  "hotelOutro": [
+    "You take the stair up one floor and hear someone talking loud in one of the rooms",
+    "WE ARE SO CLOSE!! someone screams and a loud laughing starts",
+    "what was that? you think and walks to your room.",
+    "your room is on the end of a long corridor. You open the door and the room is quite nice."
+  ],
+  "hotelManager": {
+    "greeting": ["Hello, How can i help? he asked"],
+    "options": [
+      "I'm looking for a place to stay",
+      "Are you a friend of Dr.Groom?",
+      "Ohmy! You scared me half to death"
+    ],
+    "answers": [
+      "Well, you are most welcome! We have only one visitor at the moment",
+      "No, I know who he is but he is a strange fellow with his nose in those books",
+      "Oh, I'm sorry!"
+    ]
+  }
+}
