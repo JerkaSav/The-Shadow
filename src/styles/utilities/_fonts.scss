@@ -1,11 +1,15 @@
+@import "./_variable.scss";
+
 @font-face {
   font-family: Sen;
   @import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 }
+
 @font-face {
   font-family: Ubuntu;
   @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 }
+
 @font-face {
   font-family: Roboto;
   @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -20,23 +24,24 @@ button,
 label,
 .Typewriter__wrapper {
   font-size: $reg-text;
-  font-family: Roboto;
+  font-family: Roboto, serif;
 }
 
 h4 {
   font-size: $h4;
-  font-family: Roboto;
+  font-family: Roboto, serif;
 }
 
 h3 {
   font-size: $h3;
-  font-family: Roboto;
+  font-family: Roboto, serif;
 }
 
 h2 {
   font-size: $h2;
 }
+
 h1 {
   font-size: $h1;
-  font-family: Sen;
+  font-family: Sen, serif;
 }

@@ -1,6 +1,7 @@
 .App {
-  margin: 0rem 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -13,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 header {
   grid-column: 1 / 1;
   grid-row: 4/ 7;
@@ -20,14 +22,15 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
 .grid-big {
-  height: 200vh;
   header {
     grid-column: 1 / 1;
     grid-row: 1/ 6;
   }
 }
-.form,
+
+
 .onboarding-container {
   display: flex;
   flex-direction: column;
@@ -35,6 +38,7 @@ header {
   grid-column: 1/1;
   grid-row: 5/13;
 }
+
 .onboarding-start {
   grid-column: 1/1;
   grid-row: 7/13;
@@ -51,23 +55,27 @@ header {
     grid-column: 1 / 1;
     grid-row: 2/3;
   }
+
   .btns {
     grid-column: 1/ 1;
     grid-row: 4 / 6;
     display: flex;
     justify-content: space-around;
+
     .btn-dark {
-      margin: 0;
-      margin-bottom: auto;
+      margin: 0 0 auto;
+
       img {
         padding: 0.2rem;
       }
     }
   }
+
   .playboard {
     grid-column: 1/1;
     grid-row: 6 / 11;
     display: flex;
+
     input {
       margin-top: auto;
       margin-left: 1rem;

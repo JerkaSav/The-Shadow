@@ -1,10 +1,18 @@
 @import "./mixin/mixin.scss";
+
 .btn {
   @include btn;
 }
+
+.fp-btn {
+  font-size: 2rem;
+  width: 100%;
+}
+
 .btn-dark {
   @include btn-dark;
 }
+
 input {
   @include input;
 }

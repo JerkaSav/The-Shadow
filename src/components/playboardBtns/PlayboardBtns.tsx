@@ -1,21 +1,19 @@
 import * as React from "react";
 
-export const playboardBtns = (): React.ReactElement => (
-  <div className="btn-options">
-    <button
-      onClick={() => {
-        return;
-      }}
-    ></button>
-    <button
-      onClick={() => {
-        return;
-      }}
-    ></button>
-    <button
-      onClick={() => {
-        return;
-      }}
-    ></button>
-  </div>
+type Props = {
+    options: string[]
+    onClick: (key: number) => void
+}
+export const PlayboardBtns: React.FC<Props> = ({options, onClick}) => (
+    <div className="btn-options">
+        {options.map((item, key) =>
+            <button
+                key={key}
+                onClick={() => onClick(key)}
+            >
+                {item}
+            </button>
+        )}
+
+    </div>
 );

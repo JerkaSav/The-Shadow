@@ -1,0 +1,15 @@
+{
+  "greeting": [
+    "Hello, How can i help? he asked"
+  ],
+  "options": [
+    "I'm looking for a place to stay",
+    "Are you a friend of Dr.Groom?",
+    "Ohmy! You scared me half to death"
+  ],
+  "answers": [
+    "Well, you are most welcome! We have only one visitor at the moment",
+    "No, I know who he is but he is a strange fellow with his nose in those books",
+    "Oh, I'm sorry!"
+  ]
+}
