@@ -2,7 +2,7 @@ import hotel from "../story/locations/hotel.json"
 import test from "../story/locations/testing.json"
 
 export const locations = [hotel, test]
-
+// Testing!
 type NPCType = {
     default: {
         greeting: string[],
