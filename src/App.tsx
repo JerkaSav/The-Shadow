@@ -9,10 +9,10 @@ import * as React from "react";
 export const App: React.FC = () => (
   <div className="App">
     <Switch>
-      <Route path="/" component={LandingPage} exact/>
-      <Route path="/register" component={Register}/>
-      <Route path="/onboarding" component={Onboarding}/>
-      <Route path="/main" component={Main}/>
+      <Route path="/" component={LandingPage} exact />
+      <Route path="/register" component={Register} />
+      <Route path="/onboarding" component={Onboarding} />
+      <Route path="/main" component={Main} />
     </Switch>
   </div>
 );

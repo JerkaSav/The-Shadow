@@ -1,15 +1,5 @@
 {
-  "greeting": [
-    ">i'm testing this"
-  ],
-  "options": [
-    "Nice",
-    "well it's solid",
-    "no it does not work :("
-  ],
-  "answers": [
-    "Thanks!",
-    "Ye, i know.",
-    "Darn!"
-  ]
+  "greeting": [">i'm testing this"],
+  "options": ["Nice", "well it's solid", "no it does not work :("],
+  "answers": ["Thanks!", "Ye, i know.", "Darn!"]
 }

@@ -14,7 +14,5 @@
     "what was that? you think and walks to your room.",
     "your room is on the end of a long corridor. You open the door and the room is quite nice."
   ],
-  "interaction": [
-    "hotelManager.json"
-  ]
+  "interaction": ["hotelManager.json"]
 }

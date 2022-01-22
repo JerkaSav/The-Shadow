@@ -1,13 +1,5 @@
 {
-  "intro": [
-    "testing",
-    "testing2"
-  ],
-  "outro": [
-    "",
-    "testing end"
-  ],
-  "interaction": [
-    "testNPC.json"
-  ]
+  "intro": ["testing", "testing2"],
+  "outro": ["", "testing end"],
+  "interaction": ["testNPC.json"]
 }
